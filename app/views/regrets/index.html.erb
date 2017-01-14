@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Regrets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @regrets.each do |regret| %>
+      <tr>
+        <td><%= regret.user_id %></td>
+        <td><%= regret.message %></td>
+        <td><%= link_to 'Show', regret %></td>
+        <td><%= link_to 'Edit', edit_regret_path(regret) %></td>
+        <td><%= link_to 'Destroy', regret, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Regret', new_regret_path %>

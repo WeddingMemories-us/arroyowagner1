@@ -1,0 +1,1 @@
+json.array! @regrets, partial: 'regrets/regret', as: :regret

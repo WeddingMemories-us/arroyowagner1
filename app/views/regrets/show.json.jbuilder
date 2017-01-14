@@ -1,0 +1,1 @@
+json.partial! "regrets/regret", regret: @regret

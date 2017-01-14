@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="kye5tbHPOxTKFyUlz9tLtimnIhSXkdG3pVuaUnnVYc8" />
+	<%= csrf_meta_tags %>
+	<title>The Arroyo/Wagner Guestbook</title>
+
+	<%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"%>
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true%>
+	<%= javascript_include_tag "http://code.jquery.com/jquery-1.11.3.min.js" %>
+	<%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
