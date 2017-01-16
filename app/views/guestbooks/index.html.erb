@@ -3,24 +3,29 @@
   <div class="row">
     <%= link_to 'Leave a Note', new_guestbook_path, class: 'btn btn-default' %>
   </div>
+  <br>
+  <%= paginate @guestbooks %>
   <div class="row">
     <% @guestbooks.each do |guestbook| %>
-    <div class="col-xs-6">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <%= guestbook.user_id %> says:
-        </div>
-        <div class="panel-body">
-          <%= guestbook.message %>
-        </div>
-        <div class="panel-footer">
-          <div class="btn-group btn-group-small">
-            <%= link_to 'Edit', edit_guestbook_path(guestbook), class: 'btn btn-default' %>
-            <%= link_to 'Destroy', guestbook, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default' %>
+      <div class="col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-heading panel-turq">
+            <%= guestbook.user_id %> says:
           </div>
+          <div class="panel-body panel-turq">
+            <%= guestbook.message[0..250] %>... <%= link_to 'Read More', guestbook %>
+          </div>
+          <% if current_user.id == guestbook.user.id %>
+            <div class="panel-footer panel-turq">
+              <div class="btn-group btn-group-small">
+                <%= link_to 'Edit', edit_guestbook_path(guestbook), class: 'btn btn-default' %>
+                <%= link_to 'Destroy', guestbook, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default' %>
+              </div>
+            </div>
+          <% end %>
         </div>
       </div>
-    </div>
+    <% end %>
   </div>
 </div>
 

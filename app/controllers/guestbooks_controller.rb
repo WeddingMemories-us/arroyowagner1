@@ -4,7 +4,7 @@ class GuestbooksController < ApplicationController
   # GET /guestbooks
   # GET /guestbooks.json
   def index
-    @guestbooks = Guestbook.all
+    @guestbooks = Guestbook.page(params[:page]).per(3).all
   end
 
   # GET /guestbooks/1

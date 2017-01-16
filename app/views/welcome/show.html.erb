@@ -1,0 +1,18 @@
+<div class="center">
+	<div class="title">
+		Arroyo and Wagner Wedding
+	</div>
+
+	<br />
+	<center>
+	<div class="btn-group container-fluid text-center">
+		<% if user_signed_in? %>
+			<%= link_to 'View Guestbook', guestbooks_path, class: "btn btn-semi-mini" %>
+			<%= link_to 'View Well Wishes', regrets_path, class: 'btn btn-semi-mini' %>
+		<% else %>
+			<%= link_to 'RSVP', new_user_registration_path, class: "btn btn-semi-mini" %>
+			<%= link_to 'Sign In', new_user_session_path, class: 'btn btn-semi-mini' %>
+		<% end %>
+	</div>
+	</center>
+</div>

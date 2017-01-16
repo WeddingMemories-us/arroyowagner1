@@ -1,6 +1,18 @@
-<h1>Editing Guestbook</h1>
+<div class="container-fluid center-block">
+	
+	
+	<div class="btn-group ">
 
-<%= render 'form', guestbook: @guestbook %>
+	</div>
+</div>
 
-<%= link_to 'Show', @guestbook %> |
-<%= link_to 'Back', guestbooks_path %>
+<div class="row">
+	<h1 class="title">Edit Your Message</h1>
+	<div class="panel panel-default panel-trans">
+		<%= render 'form', guestbook: @guestbook %>
+		<div class="panel-footer panel-trans">
+			<%= link_to 'Show', @guestbook, class: 'btn btn-semi-mini' %> 
+			<%= link_to 'Back', guestbooks_path, class: 'btn btn-semi-mini' %>
+		</div>
+	</div>
+</div>

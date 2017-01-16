@@ -1,0 +1,13 @@
+<nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><%= link_to 'Home', welcome_show_path %></li>
+      <li><%= link_to 'Guestbook', guestbooks_path %></li>
+      <li><%= link_to 'Regrets', regrets_path %></li>
+    </ul>
+    <div class="nav pull-right btn-group btn-group-sm" style="padding-top: .5%">
+      <%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn-semi-mini" %>
+      <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-semi-mini" %>
+    </div>
+  </div>
+</nav>

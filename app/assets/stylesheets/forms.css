@@ -1,0 +1,22 @@
+.forms {
+	border: solid black 1px;
+	width: 70%;
+	height: 300px;
+	padding: 1em;
+	text-align: center;
+}
+
+/* This is to hide fields */
+.cant-see-me{
+  display:none;
+}
+
+.submit {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.panel-trans {
+	background: rgba(255, 255, 255, 0);
+	border: none;
+}

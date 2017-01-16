@@ -1,14 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				 <%= @guestbook.user_id %> said:
+			</div>
+			<div class="panel-body">
+				<%= @guestbook.message %>
+			</div>
+			<div class="panel-footer">
+				<div class="btn-group btn-group-small">
+					<%= link_to 'Edit', edit_guestbook_path(@guestbook) %> |
+					<%= link_to 'Back', guestbooks_path %>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
 
-<p>
-  <strong>User:</strong>
-  <%= @guestbook.user_id %>
-</p>
 
-<p>
-  <strong>Message:</strong>
-  <%= @guestbook.message %>
-</p>
-
-<%= link_to 'Edit', edit_guestbook_path(@guestbook) %> |
-<%= link_to 'Back', guestbooks_path %>
