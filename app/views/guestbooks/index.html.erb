@@ -1,8 +1,7 @@
 <div class="container-fluid">
-  <h2>Messages for Jessica and William</h2>
-  <div class="row">
+  <h2 class="title">Messages for Jessica and William</h2>
+
     <%= link_to 'Leave a Note', new_guestbook_path, class: 'btn btn-default' %>
-  </div>
   <br>
   <%= paginate @guestbooks %>
   <div class="row">
@@ -10,7 +9,7 @@
       <div class="col-xs-12">
         <div class="panel panel-default">
           <div class="panel-heading panel-turq">
-            <%= guestbook.user_id %> says:
+            <%= guestbook.user.name %> says:
           </div>
           <div class="panel-body panel-turq">
             <%= guestbook.message[0..250] %>... <%= link_to 'Read More', guestbook %>
@@ -18,8 +17,9 @@
           <% if current_user.id == guestbook.user.id %>
             <div class="panel-footer panel-turq">
               <div class="btn-group btn-group-small">
-                <%= link_to 'Edit', edit_guestbook_path(guestbook), class: 'btn btn-default' %>
-                <%= link_to 'Destroy', guestbook, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default' %>
+                <% if current_user.id == guestbook.user.id %>
+                  <%= link_to 'Edit', edit_guestbook_path(guestbook), class: 'btn btn-default' %>
+                <% end %>
               </div>
             </div>
           <% end %>

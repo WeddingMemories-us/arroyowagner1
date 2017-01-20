@@ -1,18 +1,19 @@
+<div class="page-header" style="padding-top: 5%">
+	<h1 class="title"><%= @guestbook.user.name %> said:</h1>
+</div>
 <div class="container-fluid">
 	<div class="col-xs-12">
 		<div class="panel panel-default">
-			<div class="panel-heading">
-				 <%= @guestbook.user_id %> said:
-			</div>
-			<div class="panel-body">
+			<div class="panel-body panel-turq">
 				<%= @guestbook.message %>
 			</div>
-			<div class="panel-footer">
+			<div class="panel-footer panel-turq">
 				<div class="btn-group btn-group-small">
-					<%= link_to 'Edit', edit_guestbook_path(@guestbook) %> |
-					<%= link_to 'Back', guestbooks_path %>
+					<% if current_user.id == @guestbook.user.id %>
+						<%= link_to 'Edit', edit_guestbook_path(@guestbook), class: "btn btn-semi-mini" %> 
+					<% end %>
+					<%= link_to 'Back', guestbooks_path, class: "btn btn-semi-mini" %>
 				</div>
-				
 			</div>
 		</div>
 	</div>

@@ -4,7 +4,7 @@ class RegretsController < ApplicationController
   # GET /regrets
   # GET /regrets.json
   def index
-    @regrets = Regret.all
+    @regrets = Regret.page(params[:page]).per(3).all
   end
 
   # GET /regrets/1

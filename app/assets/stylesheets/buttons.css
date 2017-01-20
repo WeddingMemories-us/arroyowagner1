@@ -124,18 +124,20 @@ fieldset[disabled] .btn-semi-inline.active {
   display: block;
   box-sizing: border-box;
   background: #fff; /* fallback color for old browsers */
-  background: rgba(128, 215, 215, 0.75);
+  background: rgba(128, 215, 215, 0.5);
   border-radius: 8px;
   border: 2px solid white;
-  color: #fff;
   text-align: center;
   text-decoration: none;
-  text-shadow: 2px 2px #999999;
   font-size: 15px;
   letter-spacing: 1px;
   transition: all 0.3s ease-out;
   white-space: nowrap;
   min-width: 60px;
+  max-width: 200px;
+  color: white;
+  text-shadow: 1px 1px #999999;
+
 } 
  
 .btn-semi-mini:hover, 
@@ -144,7 +146,7 @@ fieldset[disabled] .btn-semi-inline.active {
 .btn-semi-mini.active, 
 .open .dropdown-toggle.btn-semi-mini { 
   color: #ffffff; 
-  background-color: rgba(128, 128, 128, 0.45); 
+  background-color: rgba(128, 128, 128, 0.5); 
   border: 2px solid white;
 } 
  
@@ -235,4 +237,10 @@ fieldset[disabled] .btn-transparent.active {
 .btn-transparent .badge { 
   color: #7FD7D7; 
   background-color: #FFFFFF; 
+}
+.leave-message{
+  content:"Leave Your Message";
+}
+.edit-message{
+  content: "Edit Your Message";
 }

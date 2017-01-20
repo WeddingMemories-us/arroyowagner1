@@ -1,9 +1,19 @@
-.forms {
+.big-forms {
 	border: solid black 1px;
 	width: 70%;
 	height: 300px;
 	padding: 1em;
 	text-align: center;
+}
+
+.sm-forms{
+	border-radius: 7px;
+	width: 70%;
+	outline: none;
+	display: inline-block;
+	padding: 1px;
+	alignment-baseline: center;
+
 }
 
 /* This is to hide fields */
@@ -18,5 +28,19 @@
 }
 .panel-trans {
 	background: rgba(255, 255, 255, 0);
-	border: none;
+	border: css;
+}
+
+.sm-text{
+	font-size: 20px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: bold;
+	color: white;
+	text-shadow: 1px 1px #999999;
+}
+
+.horiz-center {
+	margin: 0 auto;
+	display: inline-block;
+	position: absolute;
 }

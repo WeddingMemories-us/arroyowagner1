@@ -1,5 +1,7 @@
-<h1>New Regret</h1>
+<div class="container-fluid">
+	<h1 class="title">Well Wishes for Jessica and William</h1>
+	
+	<%= render 'form', regret: @regret, button_name: "Leave a Message" %>
 
-<%= render 'form', regret: @regret %>
-
-<%= link_to 'Back', regrets_path %>
+	<%= link_to 'Back', regrets_path, class: "btn-semi-mini submit" %>
+</div>

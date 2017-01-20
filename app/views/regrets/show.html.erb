@@ -1,14 +1,16 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>User:</strong>
-  <%= @regret.user_id %>
-</p>
-
-<p>
-  <strong>Message:</strong>
-  <%= @regret.message %>
-</p>
-
-<%= link_to 'Edit', edit_regret_path(@regret) %> |
-<%= link_to 'Back', regrets_path %>
+<div class="container-fluid">
+	<h1 class="title"><%= @regret.user.name %> said:</h1>
+	<div class="panel panel-default">
+		<div class="panel-body panel-turq">
+			<%= @regret.message %>
+		</div>
+		<div class="panel-footer panel-turq">
+			<div class="btn-group">
+				<% if current_user.id == @regret.user.id %>
+					<%= link_to 'Edit', edit_regret_path(@regret), class: "btn btn-default" %>
+				<% end %>
+				<%= link_to 'Back', regrets_path, class: "btn btn-default" %>
+			</div>
+		</div>
+	</div>
+</div>

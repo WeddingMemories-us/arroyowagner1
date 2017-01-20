@@ -1,5 +1,5 @@
-<%= form_for(regret) do |f| %>
-  <% if regret.errors.any? %>
+<%= form_for(@regret) do |f| %>
+  <% if @regret.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(regret.errors.count, "error") %> prohibited this regret from being saved:</h2>
 
@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field cant-see-me">
     <%= f.label :user_id %>
     <%= f.number_field :user_id %>
   </div>
 
-  <div class="field">
-    <%= f.label :message %>
-    <%= f.text_area :message %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <div class="container-fluid">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <%= f.text_area :message, placeholder: "Leave a message for the bride and groom.", class: "big-forms submit" %>
+            <%= f.submit :class => "submit btn-semi-inline" %>
+        </div>
+      </form>
+    </div>
 <% end %>

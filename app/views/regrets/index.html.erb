@@ -1,29 +1,29 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <h1 class="title">Well Wishes and Regrets</h1>
 
-<h1>Regrets</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>User</th>
-      <th>Message</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+  <%= paginate @regrets %>
+  <div class="row">
     <% @regrets.each do |regret| %>
-      <tr>
-        <td><%= regret.user_id %></td>
-        <td><%= regret.message %></td>
-        <td><%= link_to 'Show', regret %></td>
-        <td><%= link_to 'Edit', edit_regret_path(regret) %></td>
-        <td><%= link_to 'Destroy', regret, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class="col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <%= regret.user.name %> said:
+          </div>
+          <div class="panel-body panel-turq">
+            <%= regret.message[0..250] %>...<%= link_to "Read More", regret %>
+          </div>
+
+          <div class="panel-footer panel-turq">
+            <% if current_user.id == regret.user.id %>
+              <%= link_to "Edit", edit_regret_path(regret), class: "btn btn-default" %>
+            <% end %>
+          </div>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
+</div>
 
-<br>
 
-<%= link_to 'New Regret', new_regret_path %>
+
+

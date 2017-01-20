@@ -31,7 +31,6 @@ body {
 	color: #444;
 }	
 
-
 .center {
   position: absolute;
   top: 0;
@@ -52,4 +51,7 @@ body {
 .panel-turq{
   background: rgba(128, 215, 215, 0.25);
   border: none;
+}
+.jubotron-turq{
+  background: rgba(128, 215, 215, 0);
 }

@@ -1,6 +1,10 @@
-<h1>Editing Regret</h1>
+<div class="container-fluid">
+	<h1 class="title">Edit Your Message</h1>
 
-<%= render 'form', regret: @regret %>
+	<%= render 'form', regret: @regret %>
 
-<%= link_to 'Show', @regret %> |
-<%= link_to 'Back', regrets_path %>
+	<%= link_to 'Show', @regret, class: "btn-semi-mini submit" %> 
+	<%= link_to 'Back', regrets_path, class: "btn-semi-mini submit" %>
+
+</div>
+
