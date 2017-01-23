@@ -238,9 +238,3 @@ fieldset[disabled] .btn-transparent.active {
   color: #7FD7D7; 
   background-color: #FFFFFF; 
 }
-.leave-message{
-  content:"Leave Your Message";
-}
-.edit-message{
-  content: "Edit Your Message";
-}

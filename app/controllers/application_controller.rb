@@ -5,6 +5,14 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  def default_url
+  	if Rails.env.production?
+  		{:host => "weddingmemories.us"}
+  	else
+  		{}
+  	end
+  end
+
   protected
 
 	def configure_permitted_parameters

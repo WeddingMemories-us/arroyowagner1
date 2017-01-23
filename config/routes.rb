@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get 'registry/index'
+
   get 'welcome/index'
   get 'welcome/show'
+  get 'registry/index'
 
   resources :regrets
   devise_for :users
