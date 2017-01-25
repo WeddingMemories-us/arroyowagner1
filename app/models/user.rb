@@ -6,4 +6,7 @@ class User < ApplicationRecord
 
   has_one :guestbook
   has_one :regret
+
+  enum role: {guest: 0, owner: 1, admin: 2}
+
 end

@@ -36,8 +36,8 @@ function checkRsvp(){
       <%= label_tag :rsvp, "RSVP", class: "sm-text" %> 
     </div>
     <br>
-    <%= f.submit "Send Regrets", :class => 'btn-semi-mini submit' %>
+    <%= f.submit "Send Regrets", :class => 'btn btn-semi-mini submit' %>
   </div>
 <% end %>
 <br>
-<%= link_to "Log in", new_session_path(resource_name), class: "btn-semi-mini submit" %>
+<%= render 'devise/shared/links' %>

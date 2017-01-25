@@ -1,5 +1,6 @@
 class GuestbooksController < ApplicationController
   before_action :set_guestbook, only: [:show, :edit, :update, :destroy]
+  before_action :check_admin, except: [:show]
 
   # GET /guestbooks
   # GET /guestbooks.json
@@ -21,6 +22,9 @@ class GuestbooksController < ApplicationController
   def edit
   end
 
+  def user_entry
+  end
+  
   # POST /guestbooks
   # POST /guestbooks.json
   def create
@@ -70,5 +74,12 @@ class GuestbooksController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def guestbook_params
       params.require(:guestbook).permit(:user_id, :message)
+    end
+
+    def check_admin
+      unless current_user.role == "admin"
+        flash[:alert] = "Access denied. If you feel this error is incorrect, please contact the system administrator."
+        redirect_to user_root_path
+      end
     end
 end

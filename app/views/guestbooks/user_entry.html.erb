@@ -1,0 +1,13 @@
+<% current_user.guestbooks.each do |entry| %>
+
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-body panel-turq">
+				<%= entry.message %>
+			</div>
+			<div class="panel-turq panel-footer">
+				<%= link_to 'Edit', edit_guestbook_path(entry), class:'btn btn-semi-mini' %>
+			</div>
+		</div>
+	</div>
+<% end %>

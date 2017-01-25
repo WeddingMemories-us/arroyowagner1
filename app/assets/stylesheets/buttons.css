@@ -139,6 +139,10 @@ fieldset[disabled] .btn-semi-inline.active {
   text-shadow: 1px 1px #999999;
 
 } 
+
+.btn-semi-mini:visited{
+  color: white;
+}
  
 .btn-semi-mini:hover, 
 .btn-semi-mini:focus, 
@@ -173,6 +177,7 @@ fieldset[disabled] .btn-semi-mini:active,
 fieldset[disabled] .btn-semi-mini.active { 
   background-color: #7FD7D7; 
   border-color: #FFFFFF; 
+  color: #ffffff;
 } 
  
 .btn-semi-mini .badge { 

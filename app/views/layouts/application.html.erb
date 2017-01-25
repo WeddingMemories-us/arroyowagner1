@@ -15,7 +15,7 @@
   	<%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" %>
   </head>
 
-  <% if current_page?(root_path) || current_page?(welcome_show_path) || current_page?(new_user_registration_path) || current_page?(new_user_session_path) %>
+  <% if current_page?(root_path) || current_page?(user_root_path) || current_page?(new_user_registration_path) || current_page?(new_user_session_path) || current_page?(welcome_show_path) %>
     <body class="front_page">
       <%= yield %>
     </body>
