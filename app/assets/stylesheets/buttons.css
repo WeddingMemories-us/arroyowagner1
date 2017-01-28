@@ -1,0 +1,245 @@
+/*button for root page Enter*/
+.btn-semi {
+  display: block;
+  box-sizing: border-box;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  background: #fff; /* fallback color for old browsers */
+  background: rgba(128, 215, 215, 0.5);
+  border-radius: 8px;
+  border: 2px solid white;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+}
+
+.btn-semi:hover, 
+.btn-semi:focus, 
+.btn-semi:active, 
+.btn-semi.active, 
+.open .dropdown-toggle.btn-semi { 
+  color: #FFFFFF; 
+  background-color: rgba(128, 128, 128, 0.45); 
+  border-color: 2px solid white; 
+} 
+ 
+.btn-semi:active, 
+.btn-semi.active, 
+.open .dropdown-toggle.btn-semi { 
+  background-image: none; 
+} 
+ 
+.btn-semi.disabled, 
+.btn-semi[disabled], 
+fieldset[disabled] .btn-semi, 
+.btn-semi.disabled:hover, 
+.btn-semi[disabled]:hover, 
+fieldset[disabled] .btn-semi:hover, 
+.btn-semi.disabled:focus, 
+.btn-semi[disabled]:focus, 
+fieldset[disabled] .btn-semi:focus, 
+.btn-semi.disabled:active, 
+.btn-semi[disabled]:active, 
+fieldset[disabled] .btn-semi:active, 
+.btn-semi.disabled.active, 
+.btn-semi[disabled].active, 
+fieldset[disabled] .btn-semi.active { 
+  background-color: #7FD7D7; 
+  border-color: #000000; 
+} 
+ 
+.btn-semi .badge { 
+  color: #7FD7D7; 
+  background-color: #FFFFFF; 
+}
+/* button for welcome/show line of buttons */
+.btn-semi-inline {
+  display: block;
+  box-sizing: border-box;
+  margin: 10px auto;
+  padding: 10px;
+  width: 500px;
+  max-width: 500px;
+  background: #fff; /* fallback color for old browsers */
+  background: rgba(128, 215, 215, 0.75);
+  border-radius: 8px;
+  border: 2px solid white;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 2px 2px #999999;
+  font-size: 30px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  white-space: nowrap;
+}
+
+.btn-semi-inline:hover, 
+.btn-semi-inline:focus, 
+.btn-semi-inline:active, 
+.btn-semi-inline.active, 
+.open .dropdown-toggle.btn-semi-inline { 
+  color: #ffffff; 
+  background-color: rgba(128, 128, 128, 0.45); 
+  border: 2px solid white; 
+} 
+ 
+.btn-semi-inline:active, 
+.btn-semi-inline.active, 
+.open .dropdown-toggle.btn-semi-inline { 
+  background-image: none; 
+} 
+ 
+.btn-semi-inline.disabled, 
+.btn-semi-inline[disabled], 
+fieldset[disabled] .btn-semi-inline, 
+.btn-semi-inline.disabled:hover, 
+.btn-semi-inline[disabled]:hover, 
+fieldset[disabled] .btn-semi-inline:hover, 
+.btn-semi-inline.disabled:focus, 
+.btn-semi-inline[disabled]:focus, 
+fieldset[disabled] .btn-semi-inline:focus, 
+.btn-semi-inline.disabled:active, 
+.btn-semi-inline[disabled]:active, 
+fieldset[disabled] .btn-semi-inline:active, 
+.btn-semi-inline.disabled.active, 
+.btn-semi-inline[disabled].active, 
+fieldset[disabled] .btn-semi-inline.active { 
+  background-color: #7FD7D7; 
+  border-color: #000000; 
+} 
+ 
+.btn-semi-inline .badge { 
+  color: #7FD7D7; 
+  background-color: #ffffff; 
+}
+
+/* mini-button for header */
+.btn-semi-mini { 
+  display: block;
+  box-sizing: border-box;
+  background: #fff; /* fallback color for old browsers */
+  background: rgba(128, 215, 215, 0.5);
+  border-radius: 8px;
+  border: 2px solid white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  white-space: nowrap;
+  min-width: 60px;
+  max-width: 200px;
+  color: white;
+  text-shadow: 1px 1px #999999;
+
+} 
+
+.btn-semi-mini:visited{
+  color: white;
+}
+ 
+.btn-semi-mini:hover, 
+.btn-semi-mini:focus, 
+.btn-semi-mini:active, 
+.btn-semi-mini.active, 
+.open .dropdown-toggle.btn-semi-mini { 
+  color: #ffffff; 
+  background-color: rgba(128, 128, 128, 0.5); 
+  border: 2px solid white;
+} 
+ 
+.btn-semi-mini:active, 
+.btn-semi-mini.active, 
+.open .dropdown-toggle.btn-semi-mini { 
+  background-image: none; 
+} 
+ 
+.btn-semi-mini.disabled, 
+.btn-semi-mini[disabled], 
+fieldset[disabled] .btn-semi-mini, 
+.btn-semi-mini.disabled:hover, 
+.btn-semi-mini[disabled]:hover, 
+fieldset[disabled] .btn-semi-mini:hover, 
+.btn-semi-mini.disabled:focus, 
+.btn-semi-mini[disabled]:focus, 
+fieldset[disabled] .btn-semi-mini:focus, 
+.btn-semi-mini.disabled:active, 
+.btn-semi-mini[disabled]:active, 
+fieldset[disabled] .btn-semi-mini:active, 
+.btn-semi-mini.disabled.active, 
+.btn-semi-mini[disabled].active, 
+fieldset[disabled] .btn-semi-mini.active { 
+  background-color: #7FD7D7; 
+  border-color: #FFFFFF; 
+  color: #ffffff;
+} 
+ 
+.btn-semi-mini .badge { 
+  color: #7FD7D7; 
+  background-color: #ffffff; 
+}
+
+/* transparent button code */
+.btn-transparent {
+  display: block;
+  box-sizing: border-box;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  background: #fff; /* fallback color for old browsers */
+  background: rgba(128, 215, 215, 0);
+  border-radius: 8px;
+  border: 2px solid white;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+}
+.btn-transparent:hover, 
+.btn-transparent:focus, 
+.btn-transparent:active, 
+.btn-transparent.active, 
+.open .dropdown-toggle.btn-transparent { 
+  color: #FFFFFF; 
+  background-color: rgba(128, 128, 128, 0.45); 
+  border: 2px solid white;
+} 
+ 
+.btn-transparent:active, 
+.btn-transparent.active, 
+.open .dropdown-toggle.btn-transparent { 
+  background-image: none; 
+} 
+ 
+.btn-transparent.disabled, 
+.btn-transparent[disabled], 
+fieldset[disabled] .btn-transparent, 
+.btn-transparent.disabled:hover, 
+.btn-transparent[disabled]:hover, 
+fieldset[disabled] .btn-transparent:hover, 
+.btn-transparent.disabled:focus, 
+.btn-transparent[disabled]:focus, 
+fieldset[disabled] .btn-transparent:focus, 
+.btn-transparent.disabled:active, 
+.btn-transparent[disabled]:active, 
+fieldset[disabled] .btn-transparent:active, 
+.btn-transparent.disabled.active, 
+.btn-transparent[disabled].active, 
+fieldset[disabled] .btn-transparent.active { 
+  background-color: #7FD7D7; 
+  border-color: #000000; 
+} 
+ 
+.btn-transparent .badge { 
+  color: #7FD7D7; 
+  background-color: #FFFFFF; 
+}
