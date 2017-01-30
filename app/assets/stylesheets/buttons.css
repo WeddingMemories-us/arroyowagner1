@@ -19,6 +19,7 @@
 }
 
 .btn-semi:hover, 
+.btn-semi:visited,
 .btn-semi:focus, 
 .btn-semi:active, 
 .btn-semi.active, 
@@ -82,6 +83,7 @@ fieldset[disabled] .btn-semi.active {
 .btn-semi-inline:hover, 
 .btn-semi-inline:focus, 
 .btn-semi-inline:active, 
+.btn-semi-inline:visited,
 .btn-semi-inline.active, 
 .open .dropdown-toggle.btn-semi-inline { 
   color: #ffffff; 
